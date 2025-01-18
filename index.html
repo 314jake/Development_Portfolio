@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+<!--tab details here-->
+        <title>Jake S. Fletcher | Home</title>
+        <link rel="icon" href="./resources/images/tab_icon.ico" type="x-icon">
+
+<!--scripts-->
+        <script src="./scripts/common.js" defer></script>
+        <script src="./scripts/index.js" defer></script>
+
+<!--insert stylesheet filepaths here-->
+        <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
+        <link rel="stylesheet" href="./resources/css/common.css" type="text/css">
+        <link rel="stylesheet" href="./resources/css/index.css" type="text/css">
+
+<!--[fonts hosted locally; see style-guide.md]-->
+
+<!--basic meta settings-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+    </head>
+
+    <body>
+        <header>
+            <h2><span id="name">Jake S. Fletcher&nbsp;</span><span id="subname">Development Portfolio</span></h2>
+            <img src="./resources/images/hamburger_icon.png" alt="click for navigation menu" onclick="toggleNav();">
+        </header>
+
+        <nav>
+            <ul>
+                <li class="nav-item" id="home-link">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="nav-item" id="skills-link">
+                    <a href="./skills.html">Skills</a>
+                </li>
+                <li class="nav-item" id="projects-link">
+                    <a href="./projects.html">Projects</a>
+                </li>
+                <li class="nav-item" id="contact-link">
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+<!--Main section-->
+        <main>
+            <div id="me-c">
+                <div id="pics">
+                    <img src="./resources/images/me1.jpg" alt="Jake Fletcher" id="portrait">
+                    <div id="arrow-c">
+                        <button aria-label="previous image" class="arrow-button" id="left-arrow" onclick="prevImage()">
+                            <img src="./resources/images/left arrow.png" aria-hidden="true" class="arrow-icon">
+                        </button>
+                        <button aria-label="next image" class="arrow-button" id="right-arrow" onclick="nextImage()">
+                            <img src="./resources/images/right arrow.png" aria-hidden="true" class="arrow-icon">
+                        </button>
+                    </div>
+                </div>
+                <div id="spiel">
+                    <p>Hey, I'm <strong>Jake S. Fletcher</strong>, a nascent programmer from Brighton, UK studying full-stack engineering.</p>
+                    <br>
+                    <p>I am immersed in expanding my expertise; please see below for more details on how it's going!
+                    </p>
+                    <br>
+                    <p>In my spare time I enjoy travel, DIY, music festivals and, of course, all things nerdy.</p>
+                </div>
+            </div>
+            <div id="linkplate-c">
+                <div class="linkplate" id="skills-lp">
+                    <a href="./skills.html" class="lp-link">
+                        <h2>Skills</h2>
+                    </a>
+                </div>
+                <div class="linkplate" id="projects-lp">
+                    <a href="./projects.html" class="lp-link">
+                        <h2>Projects</h2>
+                    </a>
+                </div>
+                <div class="linkplate" id="contact-lp">
+                    <a href="./contact.html" class="lp-link">
+                        <h2>Contact</h2>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <h2>Thank you for visiting.</h2>
+        </footer>
+    </body>
+</html>

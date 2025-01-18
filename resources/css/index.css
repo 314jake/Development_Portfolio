@@ -1,0 +1,148 @@
+@font-face {
+    font-family: Copse;
+    src: url(../fonts/Copse/Copse-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: Outfit;
+    src: url(../fonts/Outfit/Outfit-VariableFont_wght.ttf) format("truetype");
+}
+#home-link {
+	display: none;
+}
+
+/*About me section*/
+#me-c {
+    display: flex;
+    align-items: center;
+    height: 25rem;
+    width: 100%;
+}
+#pics {
+    height: 80%;
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#pics * {
+    margin: 0 auto;
+}
+#portrait {
+    height: 100%;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0,0,0,0.75);
+}
+#arrow-c {
+    height: 0;
+    overflow: visible;
+    width: 15rem;
+}
+.arrow-button {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    height: 0;
+}
+#left-arrow {
+    float: left;
+}
+#right-arrow {
+    float: right;
+}
+.arrow-icon {
+    height: 3rem;
+    padding: 0.5rem;
+
+    position: relative;
+    bottom: 4rem;
+    border-radius: 2rem;    
+}
+.arrow-icon:hover {
+    background-color: rgba(96,96,96,0.5);
+    border: solid rgba(192,192,192,1) 1px;
+}
+#spiel {
+    width: 50%;
+    height: fit-content;
+}
+#spiel p {
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+
+/*Linkplate section*/
+#linkplate-c {
+    width: 90%;
+    aspect-ratio: 3;
+    margin: 0.25rem auto;
+
+    display: flex;
+    align-items: center;
+}
+.linkplate {
+    height: 80%;
+    margin: 0 1.25rem 0 1.25rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0,0,0,0.75);
+}
+#skills-lp {
+    background-color: hsl(30, 100%, 35%);
+    width: 25%;
+}
+#projects-lp {
+    background-color: hsl(120, 100%, 30%);
+    width: 45%;
+}
+#contact-lp {
+    background-color: hsl(240, 100%, 30%);
+    width: 30%;
+}
+.linkplate a {
+    text-decoration: none;
+}
+.linkplate h2 {
+    color: white;
+    font-size: 3rem;
+    font-family: Copse, serif;
+    letter-spacing: 0.125rem;
+}
+
+/*stacks content for mobile*/
+@media only screen and (max-width: 640px) {
+    #me-c {
+        flex-direction: column;
+        height: fit-content;
+        padding-top: 2rem;
+    }
+    #pics {
+        height: 20rem;
+        width: 100%;
+    }
+    #spiel {
+        width: 80%;
+        padding: 2rem 0 2rem 0;
+    }
+    #linkplate-c {
+        flex-direction: column;
+        height: 30rem;
+        aspect-ratio: none;
+    }
+    .linkplate {
+        margin: 0.5rem 0 0.5rem 0;
+    }
+    #skills-lp {
+        width: 100%;
+        height: 25%;
+    }
+    #projects-lp {
+        width: 100%;
+        height: 45%;
+    }
+    #contact-lp {
+        width: 100%;
+        height: 30%;
+    }
+}

@@ -1,0 +1,11 @@
+@font-face {
+    font-family: Copse;
+    src: url(../fonts/Copse/Copse-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: Outfit;
+    src: url(../fonts/Outfit/Outfit-VariableFont_wght.ttf) format("truetype");
+}
+#projects-link {
+	display: none;
+}
