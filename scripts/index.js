@@ -7,7 +7,7 @@ function nextImage() {
         imgId++;
     }
 
-    document.querySelector("#portrait").src = `./resources/images/me${imgId}.jpg`
+    document.querySelector("#portrait").src = `./resources/images/me${imgId}.webp`
     
 }
 
@@ -18,6 +18,6 @@ function prevImage() {
         imgId--;
     }
     
-    document.querySelector("#portrait").src = `./resources/images/me${imgId}.jpg`
+    document.querySelector("#portrait").src = `./resources/images/me${imgId}.webp`
 
 }
