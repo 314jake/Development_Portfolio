@@ -10,13 +10,24 @@ body {
     font-family: Outfit, sans-serif;
     background-color: #dddddd;
 }
+.theme-home {
+    background-color: hsl(0, 100%, 30%);
+}
+.theme-skills {
+    background-color: hsl(30, 100%, 35%);
+}
+.theme-projects {
+    background-color: hsl(120, 100%, 30%);
+}
+.theme-contact {
+    background-color: hsl(240, 100%, 30%);
+}
 header {
     position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 10;
 
-	background-color: hsl(0, 100%, 30%);
 	height: 5rem;
 	overflow-y: visible;
 
@@ -47,7 +58,7 @@ header img:active {
     height: 2.8rem;
     margin-right: 2.1rem;
 }
-nav {
+#dropdown-nav {
 	position: fixed;
     z-index: 8;
     right: 0;
@@ -56,11 +67,11 @@ nav {
 
 	background-color: #DDDDDD;
 }
-nav a {
+#dropdown-nav a {
 	color: white;
     text-decoration: none;
 }
-nav a:visited {
+#dropdown-nav a:visited {
 	color: white;
 }
 .nav-item {
@@ -69,25 +80,12 @@ nav a:visited {
     margin: 0.5rem;
     border-radius: 0.5rem;
 }
-#home-link {
-    background-color: hsl(0, 100%, 30%);
-}
-#skills-link {
-    background-color: hsl(30, 100%, 35%);
-}
-#projects-link {
-    background-color: hsl(120, 100%, 30%);
-}
-#contact-link {
-    background-color: hsl(240, 100%, 30%);
-}
 main, footer {
     position: relative;
     top: 5rem;
 }
 footer {
-    height: 2.5rem;
-    background-color: hsl(0, 100%, 30%);
+    height: 5rem;
     width: 100%;
 }
 footer h2 {
@@ -95,7 +93,7 @@ footer h2 {
     color: white;
     font-family: Copse, serif;
     font-size: 1rem;
-    padding-top: 0.75rem;
+    padding-top: 2rem;
     font-weight: lighter;
 }
 
