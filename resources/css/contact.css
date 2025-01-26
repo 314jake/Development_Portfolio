@@ -9,3 +9,89 @@
 #contact-link {
 	display: none;
 }
+main {
+    width: 70%;
+    margin: 0 auto;
+}
+h1 {
+    font-family: Copse, serif;
+    font-size: 3rem;
+    color: white;
+    padding: 2rem;
+    margin: 5rem auto;
+}
+#contact-list-c {
+    margin: 10rem auto;
+    display: grid;
+    grid: 1fr / 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-c {
+    display: flex;
+    justify-content: center;
+}
+.contact-logo {
+    width: 8rem;
+}
+#linkedin-c {
+    height: 8rem;
+}
+#linkedin-a {
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+}
+#linkedin-a img {
+    position: absolute;
+    top: 0rem;
+    z-index: -10;
+    opacity: 0.7;
+}
+#linkedin-a h2 {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.25rem 0.75rem;
+    background-color: hsla(0, 100%, 0%, 0.6);
+    border-radius: 2rem;
+}
+
+@media only screen and (max-width: 870px) {
+    main {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .contact-logo {
+        width: 5rem;
+    }
+    #linkedin-c {
+        height: 5rem;
+    }
+    #linkedin-a h2 {
+        font-size: 1rem;
+    }
+    
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        margin: 2.5rem auto;
+    }
+    #contact-list-c {
+        grid: 1fr 1fr 1fr / 1fr;
+        margin: 0;
+    }
+    .contact-c a {
+        margin: 3rem 0;
+    }
+    #linkedin-a {
+        top: -3rem;
+    }
+}
