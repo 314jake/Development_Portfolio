@@ -1,5 +1,5 @@
 Colors: 
-* Background:       hsl(0, 0%, 100%)        #FFFFFF
+* Background:       hsl(0, 0%, 100%);       #FFFFFF
 
 * 'Home' theme:     hsl(0, 100%, 30%);      #990000
 * 'Skills' theme:   hsl(30, 100%, 35%);     #B35900
