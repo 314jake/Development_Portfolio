@@ -9,3 +9,52 @@
 #skills-link {
 	display: none;
 }
+main article{
+    width: 70%;
+    margin: 0 auto;
+}
+h1 {
+    color: white;
+    font-family: Copse, serif;
+    font-size: 3rem;
+    margin: 3rem auto;
+    padding: 2rem;
+}
+.skill-c {
+    margin-bottom: 2rem;
+}
+.skill-c hr {
+    width: 60%;
+}
+.skill-title img {
+    width: 6rem;
+}
+.skill-title {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.skill-title h2 {
+    margin-left: 3rem;
+    font-size: 2.5rem;
+}
+.skill-description {
+    margin: 2rem;
+    font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 720px) {
+    main article {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .skill-title {
+        flex-direction: column;
+    }
+    .skill-title h2 {
+        margin-left: 0;
+    }
+}
