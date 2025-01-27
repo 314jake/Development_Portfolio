@@ -9,3 +9,154 @@
 #projects-link {
 	display: none;
 }
+main article {
+    width: 70%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    width: 100%;
+    font-family: Copse, serif;
+    font-size: 3rem;
+    color: white;
+    padding: 2rem;
+    margin: 5rem auto;
+}
+main article hr {
+    width: 60%;
+    margin: 2rem 0;
+}
+.project {
+    width: 100%;
+    margin: 3rem auto;
+
+    display: grid;
+    align-items: center;
+}
+.project h2 {
+    font-size: 2rem;
+}
+.button-c {
+    display: flex;
+    justify-content: center;
+}
+.run-button {
+    background-color: hsl(120, 100%, 30%);
+    border: outset black 0.1875rem;
+    border-radius: 0.5rem;
+
+    font-size: 1.5rem;
+    font-family: Outfit, sans-serif;
+    color: white;
+}
+.run-button:active {
+    border: inset black 0.1875rem;
+}
+.output-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.output {
+    width: 90%;
+    color: hsl(60, 100%, 75%);
+    font-family: monospace;
+    background-color: #333;
+    border: ridge 0.25rem white;
+    padding: 1.5rem;
+}
+
+/*This website section*/
+#this-site {
+    grid: 1fr 2fr / 2fr 1fr;
+    position: relative;
+}
+#jflogo-c {
+    grid-row: 1 / span 2;
+    grid-column: 2;
+    
+    display: flex;
+    justify-content: center;
+}
+#jflogo-c img {
+    width: 200px;
+    aspect-ratio: 1;
+}
+
+/*Mission Generator section*/
+#mission-generator {
+    grid: 1fr 1fr 1fr / 3fr 4fr;
+    min-height: 16rem;
+}
+#mission-output-c {
+    grid-row: 1 / span 3;
+    grid-column: 2;
+}
+#mission-generator-output {
+    height: 15rem;
+    overflow-y: scroll;
+}
+
+/*Card validator section*/
+#card-validator {
+    grid: 1fr 1fr 1fr / 1fr 1fr;
+    min-height: 16rem;
+}
+#card-output-c {
+    grid-row: 1 / span 3;
+    grid-column: 2;
+}
+#card-output {
+    min-height: 8rem;
+}
+
+/*Mystery Organism section*/
+#mystery-organism {
+    grid: repeat(5, 1fr) / 2fr 3fr;
+    min-height: 20rem;
+}
+#MO-output-c {
+    grid-row: 1 / span 5;
+    grid-column: 2;
+}
+#MO-output {
+    min-height: 10rem;
+}
+
+@media only screen and (max-width: 960px) {
+    main article {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    h1 {
+        margin-bottom: 0;
+    }
+    .project {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+    }
+    .project h2,
+    .project p,
+    .button-c {
+        /*flex-basis: 1;
+        flex-grow: 1;*/
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .button-c {
+        display: block;
+    }
+    .output-c {
+        width: 100%;
+    }
+}

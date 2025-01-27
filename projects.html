@@ -7,7 +7,10 @@
         <link rel="icon" href="./resources/images/tab_icon.ico" type="x-icon">
 
 <!--scripts-->
-        <script src="./scripts/common.js" defer></script>
+        <script src="./scripts/common.js" async></script>
+        <script src="./scripts/mission generator.js" async></script>
+        <script src="./scripts/credit card validator.js" async></script>
+        <script src="./scripts/mystery organism.js" async></script>
 
 <!--insert stylesheet filepaths here-->
         <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
@@ -48,7 +51,60 @@
 
 <!--Main section-->
         <main>
-
+            <article>
+                <h1 class="theme-projects">Projects</h1>
+                <section class="project" id="this-site">
+                    <h2 class="project-title">This website!</h2>
+                    <p>This portfolio website is built from scratch by me and represents the extent of my abilities in HTML and CSS. 
+                    It work alright huh? All pages pass Google DevTools' Lighthouse with full marks.
+                    </p>
+                    <div id="jflogo-c">
+                        <img src="resources/images/tab_icon.ico" alt="Jake S. Fletcher Development Portfolio icon">
+                    </div>
+                </section>
+                <hr>
+                <section class="project" id="mission-generator">
+                    <h2>Message generator</h2>
+                    <p>A simple tool to generate a random mission.</p>
+                    <div class="button-c">
+                        <button onclick="getMission()" class="run-button">Get mission</button>
+                    </div>
+                    <div class="output-c" id="mission-output-c">
+                        <p class="output" id="mission-generator-output"></p>
+                    </div>
+                </section>
+                <hr>
+                <section class="project" id="card-validator">
+                    <h2>Card Validator</h2>
+                    <p>Generates a random 14-16 digit 'card number' and checks whether it would be a valid card number 
+                    as per the <a href="https://en.wikipedia.org/wiki/Luhn_algorithm">Luhn algorithm</a> 
+                    (it will be invalid 90% of the time).</p>
+                    <div class="button-c">
+                        <button onclick="runProgram()" class="run-button">Run</button>
+                    </div>
+                    <div class="output-c" id="card-output-c">
+                        <p class="output" id="card-output"></p>
+                    </div>
+                </section>
+                <hr>
+                <section class="project" id="mystery-organism">
+                    <h2>Mystery Organism</h2>
+                    <p>Simulates the findings of a laboratory working with a mystery organism named P. Aequor.</p>
+                    <p>It generates a library of 30 specimens each with their own DNA sequence, 
+                    and can manipulate this data in a few ways. Each specimen is a JS object with a number of methods.</p>
+                    <p>In this example button, one specimen's evolutionary line will be predicted as its DNA sequence mutates through generations
+                    and the script will find the two individuals in the library with the closest genetic match.
+                    </p>
+                    <p>View this page's console or <a href="./scripts/mystery organism.js">download source code</a> 
+                    for more information.</p>
+                    <div class="button-c">
+                        <button onclick="webOutput()" class="run-button">Run</button>
+                    </div>
+                    <div class="output-c" id="MO-output-c">
+                        <p class="output" id="MO-output"></p>
+                    </div>
+                </section>
+            </article>
         </main>
 
         <footer class="theme-home">
