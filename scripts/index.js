@@ -11,6 +11,8 @@ function nextImage() {
     
 }
 
+document.querySelector('#right-arrow').addEventListener('click', nextImage);
+
 function prevImage() {
     if (imgId === 1) {
         imgId = 4;
@@ -21,3 +23,5 @@ function prevImage() {
     document.querySelector("#portrait").src = `./resources/images/me${imgId}.webp`
 
 }
+
+document.querySelector('#left-arrow').addEventListener('click', prevImage);
